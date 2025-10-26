@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery setup</title>
+    <style>
+        fieldset {
+            margin: 30px 0;
+        }
+
+        form {
+            margin: 30px 0;
+        }
+
+        #animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+        }
+
+        #sequential-box {
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            position: relative;
+            left: 0px;
+            top: 0px;
+        }
+
+        #combined-box {
+            width: 80px;
+            height: 80px;
+            background-color: orange;
+            position: relative;
+            opacity: 1;
+            border-radius: 5px;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <fieldset style="width: max-content;">
+        <legend>changing text</legend>
+        <p id="message"></p>
+        <p class="product-name"></p>
+    </fieldset>
+
+    <fieldset style="width: max-content;">
+        <legend>changing HTML</legend>
+        <div class="container"></div>
+        <div id="footer-note"></div>
+    </fieldset>
+
+    <fieldset style="width: max-content;">
+        <legend>changing css</legend>
+        <h1 id="header">Header</h1>
+        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    </fieldset>
+
+
+    <fieldset style="width:max-content;">
+        <legend>visibility effects</legend>
+        <p id="visibility-paragraph">This paragraph's visibility is controlled by the buttons below.</p>
+        <button id="hide-btn">Hide</button>
+        <button id="show-btn">Show</button>
+        <button id="toggle-btn">Toggle</button>
+    </fieldset>
+
+    <fieldset style="width: max-content;">
+        <legend>fade effects</legend>
+        <div>
+            <p id="fading-image" style="width:150px; height: 100px; display: none; background-color: black;"></p>
+        </div>
+        <button id="fade-in-btn">Fade In</button>
+        <button id="fade-out-btn">Fade Out</button>
+        <button id="fade-toggle-btn">Fade Toggle</button>
+    </fieldset>
+
+    <fieldset style="width: max-content;">
+        <legend>Panel toggling</legend>
+        <button id="slide-toggle-btn">Toggle Panel</button>
+        <div id="slide-panel" style="background-color: #f0f0f0; padding: 15px; border: 1px solid #ccc; display: none;">
+            <p>This is the collapsible panel content.</p>
+            <p>It slides up and down when toggled.</p>
+        </div>
+    </fieldset>
+
+    <fieldset style="width: max-content;">
+        <legend>adding/removing items</legend>
+        <ul id="my-list">
+            <li>Initial Item 1</li>
+            <li>Initial Item 2</li>
+        </ul>
+        <button id="add-append-btn">Append Item (Add to End)</button>
+        <button id="add-prepend-btn">Prepend Item (Add to Start)</button>
+        <button id="remove-btn">Remove Last Item</button>
+    </fieldset>
+
+    <div class="href-src-changing">
+        <img id="dynamic-image" src="https://i.pinimg.com/1200x/5d/4c/cf/5d4ccf1e420b6111429f7526ea2369ec.jpg"
+            alt="Dynamic Image" style="width: 100px; height: 100px; border: 1px solid #ccc;">
+        <br>
+        <button id="change-src-btn">Change Image Source</button>
+        <br><br>
+        <a id="dynamic-link" href="https://www.google.com" target="_blank">Google Link</a>
+        <br>
+        <button id="change-href-btn">Change Link Destination</button>
+    </div>
+
+    <fieldset style="width: max-content;">
+        <legend>form with live output</legend>
+        <form id="my-form">
+            <label for="name-input">Name:</label>
+            <input type="text" id="name-input" placeholder="Your Name"><br><br>
+            <label for="email-input">Email:</label>
+            <input type="email" id="email-input" placeholder="Your Email">
+        </form>
+        <h3>Live Output:</h3>
+        <p>Name: <span id="live-name-output"></span></p>
+        <p>Email: <span id="live-email-output"></span></p>
+    </fieldset>
+
+    <div id="animated-box"></div>
+    <button id="basic-animate-btn">Start Basic Animation</button>
+
+    <div id="sequential-box"></div>
+    <button id="sequential-animate-btn">Start Sequential Animation</button>
+
+    <div id="combined-box"></div>
+    <button id="combined-animate-btn">Start Combined Animation</button>
+    <!--  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="jquery-setup.js"></script>
+</body>
+
+</html>
